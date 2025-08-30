@@ -1,0 +1,97 @@
+
+:root {
+  /* Solid colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-purple: #6c79d6;
+  --color-very-dark-blue: #222438;
+
+  /* Element colors */
+  --color-body-bg: #be202f;
+  --color-highlight: #e81b24;
+  --color-content-shadow: rgba(0, 0, 0, 0.15);
+  --color-card-shadow: rgba(0, 0, 0, 0.25);
+  --color-name-shadow: rgba(0, 0, 0, 0.35);
+  --color-poke-shadow: rgba(0, 0, 0, 0.35);
+
+  /* Pokémon colors */
+  --color-bug: #a8b720;
+  --color-dark: #725847;
+  --color-dragon: #6f38f6;
+  --color-electric: #f7cf2e;
+  --color-fire: #ee7f30;
+  --color-fighting: #bf3029;
+  --color-flying: #a98ff0;
+  --color-fairy: #f9aec7;
+  --color-ghost: #6e5896;
+  --color-grass: #77c850;
+  --color-ground: #dfbf69;
+  --color-ice: #98d5d7;
+  --color-normal: #a6a877;
+  --color-poison: #a040a0;
+  --color-psychic: #f65687;
+  --color-rock: #b8a137;
+  --color-steel: #b9b7cf;
+  --color-water: #678fee;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--color-body-bg);
+}
+
+.content {
+  background-color: var(--color-white);
+  box-shadow: 0 0 25px 10px var(--color-content-shadow);
+  min-height: 100vh;
+  padding: 1rem;
+  width: 100vw;
+}
+
+.title {
+  font-size: clamp(3rem, 7vw, 4rem);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: var(--color-highlight);
+}
+
+.footer {
+  background-color: var(--color-white);
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer .contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.footer .link img {
+  transition: transform 0.25s;
+  width: 35px;
+}
+
+.footer .link img:hover {
+  transform: scale(1.08);
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    border-radius: 1rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+  }
+}
